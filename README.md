@@ -1,5 +1,10 @@
 # Arch Linux installation guide
 
+> [!CAUTION]
+> Keep in mind that this is what works for me. Don't follow this guide
+> mindlessly - what you require from an Arch installation will differ from what
+> this guide can achieve.
+
 This is how I install Arch on my PCs. Please note that this guide might not be
 suitable for others' needs, as I gloss over some details and, among other
 things, assume that you have the same functional needs as myself (e.g. using the
