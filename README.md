@@ -256,9 +256,10 @@ not a symlink. If it is a symlink, you need to first `rm ~/.ssh`, and then
 ```shell
 sudo pacman -S openssh
 cd .ssh
-ssh-keygen -t ed25519 -N "" -C "USER@HOST-github" -f github
-ssh-keygen -t ed25519 -N "" -C "USER@HOST-git" -f git
-ssh-keygen -t ed25519 -N "" -C "USER@HOST-uio" -f uio
+mkdir keys
+ssh-keygen -t ed25519 -N "" -C "USER@HOST-github" -f keys/github
+ssh-keygen -t ed25519 -N "" -C "USER@HOST-git" -f keys/git
+ssh-keygen -t ed25519 -N "" -C "USER@HOST-uio" -f keys/uio
 ```
 
 `ssh` into a UiO server, and copy the contents of `uio.pub` into
