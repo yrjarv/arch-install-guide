@@ -3,6 +3,7 @@ base-devel
 bat
 bind
 bluetui
+bluez-utils
 brightnessctl
 btop
 clang
@@ -43,7 +44,9 @@ openssh
 pandoc-cli
 pavucontrol
 pipewire
-pulseaudio
+pipewire-alsa
+pipewire-audio
+pipewire-pulse
 pypy3
 pyright
 python
@@ -58,6 +61,9 @@ sudo
 swaylock
 termpdf-git
 texinfo
+texlive-basic
+texlive-fontsrecommended
+texlive-latexextra
 thefuck
 thunderbird
 tmux
@@ -68,8 +74,10 @@ typescript-language-server
 valgrind
 vim
 virtualbox
+virtualbox-host-modules-arch
 waybar
 wget
+wireplumber
 wireshark-qt
 wofi
 yay

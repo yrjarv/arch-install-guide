@@ -218,25 +218,15 @@ things I don't want to have version control on.
 ### Setting up pacman and installing packages
 
 First, uncomment the `HookDir = /etc/pacman.d/hooks` line in `/etc/pacman.conf`.
-Then:
+Then, we can copy the hook that automatically keeps the `packages.txt` list
+updated:
 
 ```shell
 sudo mkdir /etc/pacman.d/hooks
+sudo cp automatic_list.hook /etc/pacman.d/hooks/
 ```
 
-And add the following content to `/etc/pacman.d/hooks/automatic_list.hook`:
-
-```
-[Trigger]
-Operation = Install
-Operation = Remove
-Type = Package
-Target = *
-
-[Action]
-When = PostTransaction
-Exec = /bin/sh -c '/usr/bin/pacman -Qqe > /home/USERNAME/arch-install-guide/packages.txt'
-```
+Make sure to replace `USERNAME` with your username after copying the file.
 
 Finally, install the AUR helper `yay`:
 
@@ -309,7 +299,7 @@ stow */
 Then, follow the instructions from the `.nvim` repo to make the nvim config work
 properly.
 
-## Eduroam (not yet tested)
+### Eduroam (not yet tested)
 
 This is my best guess of how eduroam can be set up, but I have not yet been able
 to test the connection on campus.
@@ -322,11 +312,29 @@ make build-cli
 ./geteduroam-cli
 ```
 
-## Wireshark
+### Wireshark
 
 Add your user to the `wireshark` group to get permission to listen to network
 traffic:
 
 ```shell
-sudo usermod USERNAME_HERE -G wireshark
+sudo usermod USERNAME_HERE -aG wireshark
 ```
+
+### Bluetooth
+
+Make sure to enable `bluetooth.service`:
+
+```shell
+sudo systemctl enable --now bluetooth.service
+```
+
+### `/etc/hosts`
+
+Ensure that `dns` is in the `/etc/hosts` list, this will save a lot of time when
+pinging to check the internet connection.
+
+```shell
+sudo sh -c 'echo "1.1.1.1 dns" >> /etc/hosts'
+```
+
