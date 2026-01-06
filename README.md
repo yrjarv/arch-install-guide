@@ -203,7 +203,7 @@ sudo pacman -S git stow
 git clone https://github.com/yrjarv/dotfiles
 cd .dotfiles
 mkdir -p ~/.config/test
-stow */
+stow */ --adopt
 git restore .
 rmdir ~/.config/test
 cd ~
@@ -223,6 +223,7 @@ updated:
 
 ```shell
 sudo mkdir /etc/pacman.d/hooks
+cd ~/arch-install-guide
 sudo cp automatic_list.hook /etc/pacman.d/hooks/
 ```
 
@@ -242,6 +243,7 @@ We can now install all the packages by running:
 
 ```shell
 cd ~/arch-install-guide
+git restore packages.txt
 yay -S --needed - < packages.txt
 ```
 
