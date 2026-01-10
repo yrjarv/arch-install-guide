@@ -18,6 +18,7 @@ gdu
 gimp
 git
 gnu-netcat
+gnu-netcat-debug
 grub
 htop
 hyprland
@@ -57,6 +58,7 @@ slack-desktop
 spotify-adblock
 sqlmap
 sqls
+sqls-debug
 stow
 sudo
 swaylock

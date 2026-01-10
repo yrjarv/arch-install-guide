@@ -200,7 +200,7 @@ Log in as the user you just created.
 
 ```shell
 sudo pacman -S git stow
-git clone https://github.com/yrjarv/dotfiles
+git clone https://github.com/yrjarv/.dotfiles
 cd .dotfiles
 mkdir -p ~/.config/test
 stow */ --adopt
