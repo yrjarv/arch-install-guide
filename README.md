@@ -203,6 +203,7 @@ sudo pacman -S git stow
 git clone https://github.com/yrjarv/.dotfiles
 cd .dotfiles
 mkdir -p ~/.config/test
+mkdir -p ~/.ssh/keys
 stow */ --adopt
 git restore .
 rmdir ~/.config/test
@@ -247,31 +248,45 @@ git restore packages.txt
 yay -S --needed - < packages.txt
 ```
 
-### SSH keys
+### Wireshark
 
-Now, we can generate SSH keys. First, ensure that `~/.ssh` is a directory and
-not a symlink. If it is a symlink, you need to first `rm ~/.ssh`, and then
-`mkdir ~/.ssh`.
+Add your user to the `wireshark` group to get permission to listen to network
+traffic:
 
 ```shell
-sudo pacman -S openssh
-cd .ssh
-mkdir keys
-ssh-keygen -t ed25519 -N "" -C "USER@HOST-github" -f keys/github
-ssh-keygen -t ed25519 -N "" -C "USER@HOST-git" -f keys/git
-ssh-keygen -t ed25519 -N "" -C "USER@HOST-uio" -f keys/uio
+sudo usermod USERNAME_HERE -aG wireshark
+```
+
+### Bluetooth
+
+Make sure to enable `bluetooth.service`:
+
+```shell
+sudo systemctl enable --now bluetooth.service
+```
+
+### `/etc/hosts`
+
+Ensure that `dns` is in the `/etc/hosts` list, this will save a lot of time when
+pinging to check the internet connection.
+
+```shell
+sudo sh -c 'echo "1.1.1.1 dns" >> /etc/hosts'
+```
+
+### SSH keys
+
+Now, we can generate SSH keys.
+
+```shell
+cd ~/.ssh/keys
+ssh-keygen -t ed25519 -N "" -C "USER@HOST-github" -f github
+ssh-keygen -t ed25519 -N "" -C "USER@HOST-git" -f git
+ssh-keygen -t ed25519 -N "" -C "USER@HOST-uio" -f uio
 ```
 
 `ssh` into a UiO server, and copy the contents of `uio.pub` into
 `~/.ssh/authorized-keys`
-
-If you removed `.ssh` earlier, now is the time to create all the symlinks from
-`.dotfiles` again:
-
-```shell
-cd ~/.dotfiles
-stow */
-```
 
 ### Git repos from GitHub
 
@@ -313,31 +328,5 @@ git clone github:geteduroam/linux-app
 cd linux-app
 make build-cli
 ./geteduroam-cli
-```
-
-### Wireshark
-
-Add your user to the `wireshark` group to get permission to listen to network
-traffic:
-
-```shell
-sudo usermod USERNAME_HERE -aG wireshark
-```
-
-### Bluetooth
-
-Make sure to enable `bluetooth.service`:
-
-```shell
-sudo systemctl enable --now bluetooth.service
-```
-
-### `/etc/hosts`
-
-Ensure that `dns` is in the `/etc/hosts` list, this will save a lot of time when
-pinging to check the internet connection.
-
-```shell
-sudo sh -c 'echo "1.1.1.1 dns" >> /etc/hosts'
 ```
 
