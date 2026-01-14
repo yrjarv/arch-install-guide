@@ -19,7 +19,7 @@ To get started with Ventoy, download the Ventoy binary from [the Ventoy
 website](https://www.ventoy.net/en/download.html). Make sure to choose
 `ventoy-x.y.z-linux.tar.gz`.
 
-```
+```shell
 cd Downloads
 tar -xzf ventoy-x.y.z-linux.tar.gz
 cd ventoy-x-y-z
@@ -322,7 +322,9 @@ properly.
 Because UiO Eduroam is a nightmare to set up, we need to do the following:
 
 ```shell
-sudo curl 'https://cat.eduroam.org/user/API.php?action=downloadInstaller&device=linux&profile=430' |  /usr/bin/python3
+cd /tmp
+curl 'https://cat.eduroam.org/user/API.php?action=downloadInstaller&device=linux&profile=430' > edu.py
+py edu.py
 ```
 
 And then go into `nmtui` and manually set the password. Remember to choose
