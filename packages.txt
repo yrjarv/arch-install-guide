@@ -50,6 +50,7 @@ pipewire-pulse
 pypy3
 pyright
 python
+python-dbus
 python-dotenv
 python-pylint
 rust-analyzer

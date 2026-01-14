@@ -317,16 +317,13 @@ stow */
 Then, follow the instructions from the `.nvim` repo to make the nvim config work
 properly.
 
-### Eduroam (not yet tested)
+### Eduroam
 
-This is my best guess of how eduroam can be set up, but I have not yet been able
-to test the connection on campus.
+Because UiO Eduroam is a nightmare to set up, we need to do the following:
 
 ```shell
-cd /tmp
-git clone github:geteduroam/linux-app
-cd linux-app
-make build-cli
-./geteduroam-cli
+sudo curl 'https://cat.eduroam.org/user/API.php?action=downloadInstaller&device=linux&profile=430' |  /usr/bin/python3
 ```
 
+And then go into `nmtui` and manually set the password. Remember to choose
+"`<Store password for all users>`".
