@@ -88,6 +88,7 @@ wireshark-qt
 wofi
 yay
 yay-debug
+zip
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
