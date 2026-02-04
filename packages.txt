@@ -37,6 +37,7 @@ linux-firmware
 lua-language-server
 man-db
 man-pages
+mermaid-cli
 metasploit
 neofetch
 neovim
