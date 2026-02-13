@@ -45,6 +45,7 @@ net-tools
 networkmanager
 nmap
 npm
+ntp
 openssh
 pandoc-cli
 pavucontrol

@@ -248,6 +248,15 @@ git restore packages.txt
 yay -S --needed - < packages.txt
 ```
 
+### NTP
+
+Enable `ntpd.service` and activate NTP:
+
+```shell
+sudo systemctl enable --now ntpd.service
+sudo timedatectl set-ntp 1
+```
+
 ### Wireshark
 
 Add your user to the `wireshark` group to get permission to listen to network
