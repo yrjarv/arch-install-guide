@@ -30,6 +30,7 @@ jdtls
 kitty
 kotlin
 kotlin-language-server
+ktlint
 librecad
 libreoffice-fresh
 linux
