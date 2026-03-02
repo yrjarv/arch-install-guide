@@ -47,6 +47,7 @@ networkmanager
 nmap
 npm
 ntp
+openresolv
 openssh
 pandoc-cli
 pavucontrol
@@ -87,6 +88,7 @@ virtualbox
 virtualbox-host-modules-arch
 waybar
 wget
+wireguard-tools
 wireplumber
 wireshark-qt
 wofi
