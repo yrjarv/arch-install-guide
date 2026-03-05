@@ -74,6 +74,7 @@ texinfo
 texlive-basic
 texlive-fontsrecommended
 texlive-latexextra
+texlive-plaingeneric
 thefuck
 thunderbird
 tmux
