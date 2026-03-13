@@ -26,6 +26,7 @@ htop
 hyprland
 hyprshot
 inetutils
+interception-caps2esc
 jdtls
 kitty
 kotlin
