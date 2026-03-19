@@ -11,6 +11,7 @@ btop
 clang
 cmake
 discord
+docker
 dunst
 efibootmgr
 evince
