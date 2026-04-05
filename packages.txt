@@ -27,7 +27,6 @@ htop
 hyprland
 hyprshot
 inetutils
-interception-caps2esc
 jdtls
 kitty
 kotlin
@@ -95,6 +94,7 @@ wireguard-tools
 wireplumber
 wireshark-qt
 wofi
+wtype
 yay
 yay-debug
 zip

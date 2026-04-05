@@ -338,10 +338,3 @@ py edu.py
 
 And then go into `nmtui` and manually set the password. Remember to choose
 "`<Store password for all users>`".
-
-### caps2esc
-
-```shell
-sudo cp caps2esc.yml /etc/interception/udevmon.d/
-sudo systemctl enable --now udevmon.service
-```
