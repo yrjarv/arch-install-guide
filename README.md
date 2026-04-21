@@ -97,7 +97,7 @@ Worldwide, or the US. Then, uncomment all mirrors that remain.
 
 ### 2.2 Install essential packages
 
-Install `base linux linux-firmware man-db man-pages texinfo vim networkmanager`.
+Install `base linux linux-firmware vim networkmanager`.
 The rest of the packages can be installed later.
 
 If this fails, run:
