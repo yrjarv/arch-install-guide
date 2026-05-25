@@ -72,6 +72,7 @@ sqls
 stow
 sudo
 swaylock
+teams-for-linux
 termpdf-git
 texinfo
 texlive-basic
