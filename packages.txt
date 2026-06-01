@@ -1,6 +1,4 @@
 7zip
-android-studio
-android-tools
 base
 base-devel
 bat
@@ -31,9 +29,6 @@ hyprshot
 inetutils
 jdtls
 kitty
-kotlin
-kotlin-language-server
-ktlint
 librecad
 libreoffice-fresh
 linux
