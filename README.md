@@ -203,7 +203,6 @@ sudo pacman -S git stow
 git clone https://github.com/yrjarv/.dotfiles
 cd .dotfiles
 mkdir -p ~/.config/test
-mkdir -p ~/.ssh/keys
 stow */ --adopt
 git restore .
 rmdir ~/.config/test
@@ -288,6 +287,7 @@ sudo sh -c 'echo "1.1.1.1 dns" >> /etc/hosts'
 Now, we can generate SSH keys.
 
 ```shell
+mkdir -p ~/.ssh/keys
 cd ~/.ssh/keys
 ssh-keygen -t ed25519 -N "" -C "USER@HOST-github" -f github
 ssh-keygen -t ed25519 -N "" -C "USER@HOST-git" -f git
