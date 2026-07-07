@@ -94,7 +94,6 @@ wireshark-qt
 wofi
 wtype
 yay
-yay-debug
 zip
 zsh
 zsh-autosuggestions
