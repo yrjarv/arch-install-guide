@@ -82,6 +82,7 @@ transmission-cli
 ttf-fira-code
 typescript-language-server
 unzip
+vagrant
 valgrind
 vim
 virtualbox
