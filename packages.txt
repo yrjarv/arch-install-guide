@@ -86,7 +86,7 @@ vagrant
 valgrind
 vim
 virtualbox
-virtualbox-host-modules-arch
+virtualbox-host-dkms
 waybar
 wget
 wireguard-tools
