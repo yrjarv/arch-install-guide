@@ -22,11 +22,14 @@ gdu
 gimp
 git
 gnu-netcat
+gradle
 grub
 htop
+hydra
 hyprland
 hyprshot
 inetutils
+intellij-idea-ultimate-edition
 jdtls
 kitty
 librecad
