@@ -36,6 +36,7 @@ librecad
 libreoffice-fresh
 linux
 linux-firmware
+linux-headers
 lua-language-server
 man-db
 man-pages
