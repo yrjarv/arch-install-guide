@@ -32,6 +32,7 @@ inetutils
 intellij-idea-ultimate-edition
 jdtls
 kitty
+kubectl
 librecad
 libreoffice-fresh
 linux
