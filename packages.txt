@@ -17,6 +17,7 @@ efibootmgr
 evince
 eza
 fastfetch
+filezilla
 firefox
 gdu
 gimp
