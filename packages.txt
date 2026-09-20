@@ -68,7 +68,6 @@ python-dotenv
 python-pylint
 rust-analyzer
 slack-desktop
-spotify-adblock
 sqlmap
 sqls
 stow
