@@ -10,7 +10,6 @@ btop
 clang
 cmake
 dirb
-dirb-debug
 discord
 docker
 dosfstools
@@ -54,6 +53,7 @@ networkmanager
 nmap
 npm
 ntp
+onefetch
 openresolv
 openssh
 pandoc-cli
