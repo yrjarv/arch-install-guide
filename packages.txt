@@ -9,6 +9,8 @@ brightnessctl
 btop
 clang
 cmake
+dirb
+dirb-debug
 discord
 docker
 dosfstools
@@ -44,6 +46,7 @@ man-db
 man-pages
 mermaid-cli
 metasploit
+mininet
 neofetch
 neovim
 net-tools
