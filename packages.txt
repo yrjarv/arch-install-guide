@@ -105,6 +105,7 @@ wofi
 wtype
 yay
 zip
+zoxide
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
