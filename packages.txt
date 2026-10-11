@@ -33,6 +33,7 @@ hyprshot
 inetutils
 intellij-idea-ultimate-edition
 jdtls
+john
 kitty
 kubectl
 librecad
@@ -66,6 +67,7 @@ prismlauncher
 pypy3
 pyright
 python
+python-ctfcli
 python-dbus
 python-dotenv
 python-pylint
