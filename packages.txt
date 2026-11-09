@@ -7,11 +7,13 @@ bluetui
 bluez-utils
 brightnessctl
 btop
+burpsuite
 clang
 cmake
 dirb
 discord
 docker
+docker-compose
 dosfstools
 dunst
 efibootmgr
@@ -75,6 +77,7 @@ rust-analyzer
 slack-desktop
 sqlmap
 sqls
+steghide
 stow
 sudo
 swaylock
@@ -106,6 +109,7 @@ wireshark-qt
 wofi
 wtype
 yay
+yay-debug
 zip
 zoxide
 zsh
